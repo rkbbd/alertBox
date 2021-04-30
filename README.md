@@ -1,6 +1,6 @@
 # alertBox
 
-
+<img src="https://coders-destination.blogspot.com/favicon.ico" />
 alertBox is a javascript library for developing javascripts's popup boxes.
 
 ### Installation
@@ -9,7 +9,7 @@ We suggest all to include this plug-in after loading Dom.
 ### Usage
 alertBox can be initialised with a single line of Javascript:
 
-```
+```python
 alertBox.success('Success Message');
 ```
 
@@ -23,7 +23,7 @@ Check out the documentation at https://github.com/rkbbd/alertBox/tree/master/Ale
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 #### Configuration Settings:
-```
+```python
 alertBox.config({
     _duration: 500,
     _iterations: 1,
@@ -34,24 +34,24 @@ alertBox.config({
 ```
 
 ##### success:
-```
+```python
 alertBox.success('Success Message');
 ```
 ##### error:
-```
+```python
 alertBox.error('Error Message');
 ```
 ##### warning:
-```
+```python
 alertBox.warning('Warning Message');
 ```
 ##### message:
-```
+```python
 alertBox.message('Lorem Ipsum is simply dummy text of the printing and typesetting industry');
 ```
 
 ##### inline settings:[message,timeOut,position]
-```
+```python
 alertBox.success('Success Message',1000,'topLeft');
 ```
 
