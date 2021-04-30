@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="alertBox.css">
+</head>
+<body>
+
+<h1>Alert Box</h1>
+<p>JAVASCRIPT'S POPUP BOXES</p>
+
+
+<button onclick="success()" >Success</button>
+<button onclick="error()" >Error</button>
+<button onclick="warning()" >Warning</button>
+<button onclick="message()" >Message</button>
+
+<button onclick="successTopLeft()" >←↑ Success</button>
+<button onclick="errorTopRight()" >↑→ Error</button>
+<button onclick="warningRightBottom()" >↓→ Warning</button>
+<button onclick="messageLeftBottom()" >←↓ Message</button>
+
+<script src="alertbox.js"></script>
+<script>
+alertBox.config({
+    _duration: 500,
+    _iterations: 1,
+    _easing: "cubic-bezier(0.99, 0, 0.58, 1)", //"linear", "ease", "ease-in", "ease-out", and "ease-in-out", or a custom "cubic-bezier" value like "cubic-bezier(0.42, 0, 0.58, 1)".
+    _timeout: 2000,
+    _position: "rightBottom" //rightBottom, leftBottom topRight topLeft
+})
+
+success=()=>{
+    alertBox.success('Success Message');
+}
+error=()=>{
+    alertBox.error('Error Message');
+}
+warning=()=>{
+    alertBox.warning('Warning Message');
+}
+message=()=>{
+    alertBox.message('Lorem Ipsum is simply dummy text of the printing and typesetting industry');
+}
+
+successTopLeft=()=>{
+    alertBox.success('Success Message',1000,'topLeft');
+}
+errorTopRight=()=>{
+    alertBox.error('Error Message',1000,'topRight');
+}
+warningRightBottom=()=>{
+    alertBox.warning('Warning Message',1000,'rightBottom');
+}
+messageLeftBottom=()=>{
+    alertBox.message('Lorem Ipsum is simply dummy text of the printing and typesetting industry',1000,'leftBottom');
+}
+
+
+</script>
+</body>
+</html>
