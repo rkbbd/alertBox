@@ -1,7 +1,6 @@
 # alertBox
 
-<img src="https://coders-destination.blogspot.com/favicon.ico" />
-alertBox is a javascript library for developing javascripts's popup boxes.
+<img src="https://coders-destination.blogspot.com/favicon.ico" />   alertBox is a javascript library for developing javascripts's popup boxes.
 
 ### Installation
 We suggest all to include this plug-in after loading Dom.
